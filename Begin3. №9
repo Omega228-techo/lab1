@@ -1,1 +1,28 @@
+#include <iostream>
+using namespace std;
 
+int main ()
+{
+    double a, b;
+    double sqA, sqB, Sum, Diff, Prod, Quot;
+    
+    a = 5; // Введіть сюди ваше значення a (не нуль)
+    b = 2; // Введіть сюди ваше значення b (не нуль)
+    
+    // розрахунок
+    sqA = a * a;
+    sqB = b * b;
+    Sum = sqA + sqB;
+    Diff = sqA - sqB;
+    Prod = sqA * sqB;
+    Quot = sqA / sqB;
+    
+    // вивід
+    cout << "For a = " << a << ", b = " << b << endl;
+    cout << "Sum of squares: " << Sum << endl;
+    cout << "Difference of squares: " << Diff << endl;
+    cout << "Product of squares: " << Prod << endl;
+    cout << "Quotient of squares: " << Quot << endl;
+    
+    return 0;
+}
