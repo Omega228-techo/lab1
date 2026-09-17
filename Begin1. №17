@@ -1,1 +1,20 @@
-
+#include <iostream>
+using namespace std;
+int main ()
+{
+    // декларація змінних
+    double x, y, t;
+    
+    // введення змінної
+    x = 5;
+    
+    // розрахунок результату
+    t = (x - 3) * (x - 3) * (x - 3); // обчислюємо (x-3)^3
+    y = 4 * t * t - 7 * t + 2;        // t * t дорівнює (x-3)^6
+    
+    // вивід результату
+    cout << "For x = " << x << endl;
+    cout << "y = " << y << endl;
+    
+    return 0;
+}
