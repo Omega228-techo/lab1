@@ -1,1 +1,21 @@
+#include <iostream>
+using namespace std;
 
+int main ()
+{
+    double R, D, S;
+    const double PI = 3.14;
+    
+    R = 5;
+    
+    // розрахунок
+    D = 2 * R;
+    S = (PI * R * R) / 4;
+    
+    // вивід
+    cout << "For R = " << R << endl;
+    cout << "Diameter D: " << D << endl;
+    cout << "Sector area S: " << S << endl;
+    
+    return 0;
+}
