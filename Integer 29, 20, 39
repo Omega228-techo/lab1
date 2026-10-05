@@ -1,1 +1,22 @@
-
+№29
+#include <iostream>
+int main() {
+    // Задаємо початкові значення
+    long long A = 5;
+    long long B = 2;
+    long long C = 9;
+    std::cout << "Задані значення: A = " << A << ", B = " << B << ", C = " << C << "\n\n";
+    // Кількість квадратів вздовж кожної зі сторін
+    long long count_A = A / C; // 5 / 9 = 0
+    long long count_B = B / C; // 2 / 9 = 0
+    // Загальна кількість квадратів
+    long long total_squares = count_A * count_B;
+    // Обчислення площі незайнятої частини
+    long long total_area = A * B;
+    long long occupied_area = total_squares * (C * C);
+    long long unoccupied_area = total_area - occupied_area;
+    // Виведення результатів у консоль
+    std::cout << "Кількість квадратів: " << total_squares << std::endl;
+    std::cout << "Площа незайнятої частини: " << unoccupied_area << std::endl;
+    return 0;
+}
